@@ -1,7 +1,5 @@
-resource "aws_s3_bucket" "redirects" {
-	for_each = toset(var.redirects)
-
-  bucket = "${each.key}${each.key == "" ? "" : "."}${var.domain}"
+resource "aws_s3_bucket" "redirect" {
+  bucket = var.domain
   acl    = "public-read"
 
 	website {

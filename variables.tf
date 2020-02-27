@@ -15,7 +15,7 @@ variable "entrypoint" {
 	default = "index.html"
 }
 
-variable "redirects" {
-	type = list(string)
-	default = [""]
+variable "route53_zone_id" {
+	description = "The Route53 Zone ID to set a record in"
+	type = string
 }
