@@ -14,3 +14,8 @@ variable "entrypoint" {
 	type = string
 	default = "index.html"
 }
+
+variable "redirects" {
+	type = list(string)
+	default = [""]
+}
