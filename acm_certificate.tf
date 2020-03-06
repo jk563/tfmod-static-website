@@ -1,7 +1,7 @@
 resource "aws_acm_certificate" "main" {
   provider = aws.us_east_1
 
-  domain_name               = "${var.subdomain}.${var.domain}"
+  domain_name               = "www.${var.domain}"
   subject_alternative_names = [var.domain]
   validation_method         = "DNS"
 }

@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "main" {
-  bucket = "${var.subdomain}.${var.domain}"
+  bucket = "www.${var.domain}"
   acl    = "public-read"
 
   website {

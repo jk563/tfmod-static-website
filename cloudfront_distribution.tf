@@ -21,7 +21,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   default_root_object = "index.html"
 
   aliases = [
-    "${var.subdomain}.${var.domain}",
+    "www.${var.domain}",
     var.domain
   ]
   price_class = "PriceClass_100"

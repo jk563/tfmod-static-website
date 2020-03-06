@@ -1,9 +1,3 @@
-variable "subdomain" {
-  description = "The subdomain of the bucket"
-  type        = string
-  default     = "www"
-}
-
 variable "domain" {
   description = "The root domain of the bucket"
   type        = string
